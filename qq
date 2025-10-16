@@ -70,14 +70,16 @@ local config_flags = library.config_flags
 local themes = {
 	preset = {
 		["outline"] = rgb(32, 32, 38), --
-		["inline"] = rgb(242, 242, 235), --
-		["accent"] = rgb(242, 242, 235), --
+		["inline"] = rgb(242, 242, 235), --  <-- Line 46
+		["accent"] = rgb(242, 242, 235), --  <-- Line 47
 		["contrast"] = rgb(35, 35, 47),
 		["text"] = rgb(170, 170, 170),
 		["unselected_text"] = rgb(90, 90, 90),
 		["text_outline"] = rgb(0, 0, 0),
-		["glow"] = rgb(242, 242, 235),
+		["glow"] = rgb(242, 242, 235),     <-- Line 51
 	},
+-- ... rest of themes table
+}
 
 	utility = {
 		["outline"] = {
